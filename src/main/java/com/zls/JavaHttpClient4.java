@@ -26,8 +26,12 @@ public class JavaHttpClient4 {
 		long start = System.currentTimeMillis();
 		HttpGet httpGet = new HttpGet("http://www.zhimaruanjian.com/?148");
 		HttpHost proxy = new HttpHost("113.123.50.78", 808);
-		RequestConfig config = RequestConfig.custom().setProxy(proxy).build();
-		httpGet.setConfig(config );
+		RequestConfig config = RequestConfig.custom()
+				.setProxy(proxy)
+				.setConnectTimeout(10000)  //设置连接超时时间
+				.setSocketTimeout(10000)   //设置读取超时时间
+				.build();
+		httpGet.setConfig(config);
 		CloseableHttpResponse response = null;
 		try {
 			//获取响应
