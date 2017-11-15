@@ -24,4 +24,20 @@ config实例化配置
 设置连接超时时间
 设置读取超时时间
 
+jsoup是一款java的html解析器
+配合httpClient提取网页标题
+获取document文档、取标签DOM元素element
+
+jsoup查找元素
+getElementsByTag
+getElementById
+getElementsByClass
+getElementsByAttribute
+getElementsByAttributeValue
+
+通过选择器查找元素
+select
+
+获取dom元素属性值
+
 
