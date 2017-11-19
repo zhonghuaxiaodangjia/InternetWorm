@@ -34,5 +34,13 @@
 	    <artifactId>ehcache</artifactId>
 	    <version>2.10.4</version>
 	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/net.sourceforge.htmlunit/htmlunit -->
+	<dependency>
+	    <groupId>net.sourceforge.htmlunit</groupId>
+	    <artifactId>htmlunit</artifactId>
+	    <version>2.26</version>
+	</dependency>
+	
   </dependencies>
 </project>
